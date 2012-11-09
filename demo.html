@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="Laust Johan Deleuran" />
+	<meta name="description" content="Simple form dropdown prettifier" />
+	<title>Simple form dropdown prettifier</title>
+	<link type="image/x-icon" rel="shortcut icon" href="http://25.media.tumblr.com/avatar_8526a99681a0_16.png" />
+	<link type="stylesheet" media="all" href="simpleselectui.css" />
+	<style>
+
+	</style>
+</head>
+<body>
+	<div class="demos">
+		<div class="demo">
+			<h2 class="demo-header">
+				Normal dropdown
+			</h2>
+			<select>
+				<option value="1">Option 1</option>
+				<option value="2">Øptiøn with spæciål chåråctårs</option>
+				<option value="3">Option with an extremely long name that no-one will ever read</option>
+				<option value="4">Option 4</option>
+				<option value="5">Option 5</option>
+				<optgroup>
+					<option value="6" class="test">Option 6</option>
+					<option value="7"></option>
+					<option value="8">Option 6</option>
+				</optgroup>
+			</select>
+		</div>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="simpleselectui.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('select').simpleSelectUI();
+		});
+	</script>
+</body>
+</html>
